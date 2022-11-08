@@ -34,6 +34,6 @@ $(document).ready(function(){
 function login_status(){
     if($("#email-availability-status").text()=="Success" && $("#password-status").text()=="Success"){
         $("#response-message").html('<span class="text-success">Registered successfully</span>');
-        window.location.href="/profile.html";
+        window.location.href="../profile.html";
     }
 }
