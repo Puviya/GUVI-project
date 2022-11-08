@@ -86,6 +86,6 @@ function registration_status(){
             }
         })
         $("#response-message").html('<span class="text-success">Registered successfully</span>');
-        window.location.href="/login.html";
+        window.location.href="../login.html";
     }
 }
