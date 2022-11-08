@@ -24,7 +24,7 @@ $(document).ready(function(){
     function checkusername(username){
         $.ajax({
             method:'POST',
-            url:'../php/register.php',
+            url:'./../php/register.php',
             data:'username='+username,
             success:function(data){
                 $("#username-availability-status").html(data);
@@ -34,7 +34,7 @@ $(document).ready(function(){
     function checkemail(email){
         $.ajax({
             method:'POST',
-            url:'../php/register.php',
+            url:'./../php/register.php',
             data:'email='+email,
             success:function(data){
                 $("#email-availability-status").html(data);
@@ -44,7 +44,7 @@ $(document).ready(function(){
     function checkphone(phone){
         $.ajax({
             method:'POST',
-            url:'../php/register.php',
+            url:'./../php/register.php',
             data:'phone='+phone,
             success:function(data){
                 $("#phone_validation").html(data);
@@ -54,7 +54,7 @@ $(document).ready(function(){
     function checkpassword(password){
         $.ajax({
             method:'POST',
-            url:'../php/register.php',
+            url:'./../php/register.php',
             data:'password='+password,
             success:function(data){
                 $("#password_validation").html(data);
@@ -79,13 +79,13 @@ function registration_status(){
 
         $.ajax({
             method:'POST',
-            url:'../php/register.php',
+            url:'./../php/register.php',
             data:{'username':username,'email':email,'phone':phone,'password':password},
             success:function(data){
                 $("#username-availability-status").html(data);
             }
         })
         $("#response-message").html('<span class="text-success">Registered successfully</span>');
-        window.location.href="../login.html";
+        window.location.href="./../login.html";
     }
 }
