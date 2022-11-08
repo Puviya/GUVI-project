@@ -26,7 +26,7 @@ $(document).ready(function(){
             method:'POST',
             url:'./../php/register.php',
             data:'username='+username,
-            data-type:'text',
+            datatype:'json',
             success:function(data){
                 $("#username-availability-status").html(data);
             }
